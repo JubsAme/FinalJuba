@@ -1,0 +1,349 @@
+/*Polices Google font importées.*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Main avec display: flex pour placer les différentes parties les unes au dessus es autres. Width de 100vw pour respect des consignes. Couleur d'arrière plan avec marges auto et un flex wrap pour l'ajustement de la taille.*/
+#main{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    background-color:lightseagreen;
+    margin: auto;
+    flex-wrap: wrap;
+}
+/*Header en display flex pour pouvoir placer les différents éléments correctement. avec une hauteur de 100px pour que le nav ne prenne pas trop de place.
+Width de 100vw pour respecter les consignes. couleur d'arrière plan en noir et position fixe pour que le menu soit toujours présent dans la page.*/
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    flex-wrap: wrap;
+}
+/*Footer avec une hauteur de 300px pour pouvoir y renter tout le contenu, un width de 100vw pour respecter les consignes mettre la couleur d'arriere plan en noir pour
+avoir la même couleur que le header, mettre le tout en display flex pour avoir les éléments à la bonne place mettre le flex direction en row pour pouvoir bien
+placer les réseaux sociaux et l'avis de confidentialité et mettre de l'espace entre pour prendre l'espace entière du footer. Ajouter un flex wrap et des padding pour l'ajustement de la taille de la page.*/
+footer{
+    height: 300px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+}
+/*Mettre le nav en display flex poue aligner les éléments du nav et mettre de l'espace tout autour pour prendre l'espace complet du header,
+mettre une hauteur de 100 pour recentrer le contenu avec une width de 100vw pour respecter les consignes. Aligner le tout au centre du header avec une position fixe et une couleur de texte blanche.*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    position: fixed;
+    color: white;
+}
+/*Mettre la première section du main accueil en flx pour bien aligner les éléments dans le main et mettre le flex direction en colonee pour aligner le tout.
+avec une height et un width de 100vh et 100vw pour l'adaptation web. aligner le contenu au centre de la page.avec un padding de 200px pour empêcher
+que le header ne cache le contenu. Changer la police.*/
+#accueil{
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    padding-top: 200px;
+    font-family: 'Anton', sans-serif;
+}
+/*Mettre la hauteur et la largeur de la page inscription à 100vh et 100vw pour l'adaptation web. Rajouter du padding-top pour empêcher le header de cacher le contenu.*/
+#inscription{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 200px;
+}
+/*Aligner le texte h1 au centre de la page.*/
+#inscription h1{
+    padding-left: 700px;
+}
+/*Mettre un width de 80vw avec un justify content space around pour centrer le contenu. changer la couleur d'arrière plan, mettre des marges et mettre le tout en wrap avec un flex-wrap.*/
+form{
+    width: 80vw;
+    background-color: lightgrey;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*Changer la couleur d'arriere plan du formulaire pour une couleur plus foncée que l'arriere plan du main.*/
+fieldset{
+    background-color:cadetblue;
+}
+/*Mettre la colonne en flex.*/
+.colonne{
+    flex: 1 0 40%;
+}
+/*Mettre la première colonne avec les boutons radio en flex et aligner le tout en flex-end avec du padding à droite de 10%.*/
+.colonne:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10%;
+}
+/*Mettre le fieldset de la colonne en flex et mettre de l'espace tout autour pour l'esthétique.*/
+.colonne fieldset{
+    display: flex;
+    justify-content: space-between;
+}
+/*Mettre les boutons du formulaire au centre de leurs cellules en les mettant en flex et en ajoutant du space-around*/
+#boutons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 80%;
+}
+/*Mettre la taille de la section tableau en 100vh et 100vw pour le respect des consignes avec un padding-top pour que l'entête ne piétine pas sur le contenu.*/
+#tableau{
+    padding-top: 200px;
+    height: 100vh;
+    width: 100vw;
+}
+/*Centrer le titre au milieu de la page.*/
+#tableau h1{
+    padding-left: 600px;
+}
+/*Changer la taille du tableau et ajouter une bordure de 1px noire avec des marges automatiques pour centrer le tout.*/
+table{
+    height: 400px;
+    width: 900px;
+    border: 1px solid black;
+    margin: auto;
+}
+/*Ajouter une bordure dans chaque cellule du tableau.*/
+td{
+    border: 1px solid black;
+}
+/*Mettre la hauteur et la largeur de la section articles à 100vh et 100vw pour le respect des consignes mettre du padding-top pour que l'entête
+ne piétine pas su rle contenu de la section avec du padding de chaque côté pour centrer le contenu au milieu de la page et du padding-bottom pour l'esthétique.*/
+#articles{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 100px;
+}
+/*Mettre le width de la section rocket à 100vw  et la hauteur à 160px pour que le contenu se place correctement*/
+#rocket{
+    width: 100vw;
+    height: 160px;
+}
+/*Mettre le width de la section rocket à 100vw  et la hauteur à 100px pour que le contenu se place correctement*/
+#apex{
+    width: 100vw;
+    height: 100px;
+}
+/*Mettre le width de la section rocket à 100vw  et la hauteur à 100px pour que le contenu se place correctement*/
+#overwatch{
+    width: 100vw;
+    height: 100px;
+}
+/*Mettre le contenu des articles en flex pour bien aligner le tout avec un flex direction row, ajouter du padding et de la hauteur pour l'esthétique.*/
+.principal{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    height: 170px
+}
+/*Changer de place l'image et le texte à chaque 2 lignes.*/
+.principal:nth-of-type(2n){
+    flex-direction: row-reverse;
+}
+/*Changer la tille de l'image de rocket league et rajouter du margin pour le séparer du texte.*/
+.imgrocket :nth-of-type(1){
+    height: 160px;
+    width: 120px;
+    margin-left: 10px;
+}
+/*Changer la tille de l'image de Apex legends et rajouter du margin pour le séparer du texte.*/
+.imgapex :nth-of-type(1){
+    height: 100px;
+    width: 200px;
+    margin-right: 10px;
+}
+/*Changer la tille de l'image de Overwatch 2 et rajouter du margin pour le séparer du texte.*/
+.imgoverwatch :nth-of-type(1){
+    height: 100px;
+    width: 200px;
+    margin-left: 10px;
+}
+/*Mettre la largeur et la hauteur de la section galerie pour l'affichage de la page sur un site web. avec du padding pour que l'entête ne piétine pas sur le contenu.
+et du padding gauche pour aligner le tout au milieu.*/
+#galerie{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 150px;
+    padding-left: 300px;
+}
+/*Changer la taille de la zone du titre et rajouter des marges pour bien aligner le tout au milieu.*/
+#galerie h1{
+    width: 300px;
+    margin-left: 400px;
+}
+/*Changer le display de la div photoshop pour que toute les photos soient une à côté de l'autre.*/
+#photoshop{
+    display: flex;
+    flex-direction: row;
+}
+/*Changer le display de la div site pour que toute les photos soient une à côté de l'autre.*/
+#site{
+    display: flex;
+    flex-direction: row;
+}
+/*Changer la taille de la première photo dans la div photoshop*/
+#photoshop :nth-of-type(1){
+    width: 150px; 
+    height: 180px;
+}
+/*Changer la taille de la deuxième photo dans la div photoshop et rajouter du padding pour éviter que les photos soient collées*/
+#photoshop :nth-of-type(2){
+    width: 180px; 
+    height: 150px;
+    margin-left: 10px;
+}
+/*Changer la taille de la troisième photo dans la div photoshop et rajouter du padding pour éviter que les photos soient collées*/
+#photoshop :nth-of-type(3){
+    width: 150px; 
+    height: 180px;
+    margin-left: 10px;
+}
+/*Changer la taille de la quatrième photo dans la div photoshop et rajouter du padding pour éviter que les photos soient collées*/
+#photoshop :nth-of-type(4){
+    width: 180px; 
+    height: 150px;
+    margin-left: 10px;
+}
+/*Changer la taille de la cinquième photo dans la div photoshop et rajouter du padding pour éviter que les photos soient collées*/
+#photoshop :nth-of-type(5){
+    height: 150px;
+    width: 110px;
+    margin-left: 10px;
+}
+/*Changer la taille de la première photo dans la section site*/
+#site :nth-of-type(1){
+    width: 300px;
+    height: 200px;
+}
+/*Changer la taille de la deuxième photo dans la section site et rajouter du padding pour éviter que les photos se collent.*/
+#site :nth-of-type(2){
+    width: 300px; 
+    height: 200px;
+    margin-left: 10px;
+}
+/*Changer la taille de la troisième photo dans la section site et rajouter du padding pour éviter que les photos se collent.*/
+#site :nth-of-type(3){
+    width: 300px; 
+    height: 200px;
+    margin-left: 10px;
+}
+/*Mettre du padding top pour empêcher que l'entête piétine sur le contenu, rajouter du padding left pour centrer le contenu, rajouter du padding-bottom pour bien centrer le tout.
+mettre le tout en display flex pour mettre les vidéos les unes a coté de l'autre*/
+#video{
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-bottom: 400px;
+    display: flex;
+    flex-direction: row;
+}
+/*Mettre le texte de la première ligne du tableau pour indiquer des titres.*/
+#bold{
+    font-weight: bold;
+}
+/*Changer la police des H1*/
+h1{
+    font-family: 'Abril Fatface', cursive;
+}
+/*Changer la police des h2 dans les sections galerie et video.*/
+#galerie h2, #video h2{
+    font-family: 'Courgette', cursive;
+}
+/*Changer la police des éléments du tableau*/
+td{
+    font-family: 'Oswald', sans-serif;
+}
+/*Animation pour les éléments du nav dans le header, grossisement et changement de ouleur*/
+header a:hover:nth-of-type(1n){
+    transform: scale(1.3);
+    transition: all 0.3s linear;
+    border-radius: 40px 40px 40px 40px;
+    color: red;
+}
+/*Changement de l'état du nav en enlevant le sous lignement et en changant la couleur.*/
+a:link{
+    text-decoration: none;
+    color: lightskyblue
+}
+/*Changer l'esthétique des éléments du nav lorsque les liens furent visités.*/
+a:visited{
+    text-decoration: none;
+    color: lightskyblue;
+}
+/*Animation dans la page d'accueil le texte se sépare et descends lorsque le curseur est sur la page.*/
+#main #accueil:hover:nth-of-type(1n){
+    transform: translate(0px, 40px);
+    line-height: 40px;
+    transform-origin: 0 0;
+    transition: all 0.5s linear;
+}
+/*Changer le scroll behavior du site web lorsque les liens sont appuyés dans le nav.*/
+html{
+    scroll-behavior: smooth;
+}
+/*Animation pour changer la taille et déplacer la première image de la section site de la galerie.*/
+#main #site:hover :nth-of-type(1){
+    transform: translate(-150px) scale(1.5);
+    transition: 0.5s linear;
+}
+/*Animation pour changer la taille de la deuxième image de la section site de la galerie.*/
+#main #site:hover :nth-of-type(2){
+    transform: scale(1.5);
+    transition: 0.5s linear;
+}
+/*Animation pour changer la taille et déplacer la troisième image de la section site de la galerie.*/
+#main #site:hover :nth-of-type(3){
+    transform: translate(150px) scale(1.5);
+    transition: 0.5s linear;
+}
+/*Mettre les éléments du footer dans la section info en display flex pour l'alignement et le placement des éléments. Mettre un flex-direction
+en colonne pour que le contenu soit mis en colonne aligner le tout au mileu et rajouter du padding-top pour l'esthétique.*/
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+/*Mettre l'avis de confidentialité en display: flex avec un flex-direction en colonne pour bien aligner le contenu de la section, rajouter une largeur
+de 40% pour l'aligner à côté des icones. Aligner le tout au débu du flex et rajouter du padding-top pour l'esthétique*/
+#avisconf{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+/*Mettre une largeur de 60% à la zone pour les émojis pour le placer correctement avec du padding pour les aligner au milieu.*/
+#icones{
+    width: 60%;
+    padding-left: 85px;
+}
+
